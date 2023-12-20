@@ -83,7 +83,7 @@ while(condicion){
 
 // let repetir = true;
 
-// while(repetir){
+// while(repetir){ //bucle inifinito
 //   console.log("Hola");
 // }
 
