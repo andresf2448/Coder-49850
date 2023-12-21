@@ -107,11 +107,11 @@ do{
 
 // let repetir = false;
 
-// while (repetir) { primero piensa luego actua
+// while (repetir) { //primero piensa luego actua
 //   console.log("Entramos");
 // }
 
-// do { primero actua luego piensa
+// do { //primero actua luego piensa
 //   console.log("Entramos");
 // } while (repetir);
 
