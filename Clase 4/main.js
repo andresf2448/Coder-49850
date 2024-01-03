@@ -170,8 +170,8 @@ const suma = (x, y) => x + y;
 const resta = (x, y) => x - y;
 const iva = (x) => x * 0.21;
 
-let precioProducto = 1000;
-let descuento = 100;
+let precioProducto = Number(prompt("Ingrese el precio del producto"));
+let descuento = Number(prompt("Ingrese el descuento"));
 
 //precio + iva - descuento
 let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
@@ -179,4 +179,4 @@ let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
 // = resta(suma(1000, 210), 100);
 // = resta(1210, 100);
 // = 1110
-console.log(nuevoPrecio);
+alert(nuevoPrecio);
