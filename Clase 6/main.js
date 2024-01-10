@@ -82,3 +82,62 @@ estructura de un arreglo
 //reverse invierte el orden del arreglo
 // productos.reverse();
 // console.log(productos);
+
+// const productos = ["camisa", "pantalon", "media", "zapato"];
+
+// const eliminarNombre = (nombre) => {
+//   let indice = productos.indexOf(nombre);
+
+//   if (indice != -1) {
+//     productos.splice(indice, 1);
+//     console.log(productos);
+//   }
+// };
+
+// eliminarNombre("media");
+
+//ARREGLOS CON OBJETOS
+// const objeto = { nombre: "camisa", precio: 1000 };
+// const productos = [{ nombre: "media", precio: 400 }];
+
+// productos.push(objeto);
+// console.log(productos);
+
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "media", precio: 750 },
+//   { id: 3, nombre: "zapato", precio: 320 },
+//   { id: 4, nombre: "gorra", precio: 142 },
+// ];
+
+// for (const producto of productos) {
+//   console.log(producto.nombre);
+//   console.log(producto.precio);
+// }
+
+// class Producto {
+//   constructor(nombre, precio) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.vendido = false;
+//   }
+
+//   vender() {
+//     this.vendido = true;
+//   }
+// }
+
+// const productos = [];
+// productos.push(new Producto("camisa", 1000));
+// productos.push(new Producto("media", 700));
+// productos.push(new Producto("zapato", 520));
+// productos.push(new Producto("gorra", 120));
+
+// console.log(productos);
+
+const encontrar = (nombre) => {
+  
+};
+
+let nombre = prompt("Ingrese el nombre para buscar el producto");
+encontrar(nombre);
