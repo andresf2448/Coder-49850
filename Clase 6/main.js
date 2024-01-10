@@ -135,9 +135,18 @@ estructura de un arreglo
 
 // console.log(productos);
 
+//buscar en el arreglo el producto por su nombre y mostrar sus propiedades por un alert
 const encontrar = (nombre) => {
   
 };
 
 let nombre = prompt("Ingrese el nombre para buscar el producto");
 encontrar(nombre);
+
+//buscar todos los productos que su precio sea mayor al pasado parametro
+const filtrar = (precio) => {
+
+};
+
+let precio = Number(prompt("Ingrese el precio mínimo"));
+filtrar(precio);
