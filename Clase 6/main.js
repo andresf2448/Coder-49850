@@ -135,18 +135,46 @@ estructura de un arreglo
 
 // console.log(productos);
 
+const productos = [
+  { id: 1, nombre: "camisa", precio: 1000 },
+  { id: 2, nombre: "media", precio: 750 },
+  { id: 3, nombre: "zapato", precio: 320 },
+  { id: 4, nombre: "gorra", precio: 142 },
+];
+
 //buscar en el arreglo el producto por su nombre y mostrar sus propiedades por un alert
 const encontrar = (nombre) => {
-  
+  let productoEncontrado;
+  for (const producto of productos) {
+    if (producto.nombre === nombre) {
+      productoEncontrado = producto;
+    }
+  }
+
+  if (productoEncontrado) {
+    alert(`
+      Id: ${productoEncontrado.id}
+      Nombre: ${productoEncontrado.nombre}
+      Precio: ${productoEncontrado.precio}
+    `);
+  }
 };
 
 let nombre = prompt("Ingrese el nombre para buscar el producto");
 encontrar(nombre);
 
 //buscar todos los productos que su precio sea mayor al pasado parametro
-const filtrar = (precio) => {
+// const filtrar = (precio) => {};
 
-};
+// let precio = Number(prompt("Ingrese el precio mínimo"));
+// filtrar(precio);
 
-let precio = Number(prompt("Ingrese el precio mínimo"));
-filtrar(precio);
+// class Producto {
+//   constructor(nombre, precio) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//   }
+// }
+
+// const producto1 = new Producto("camisa", 1000);
+// console.log(producto1.nombre);
