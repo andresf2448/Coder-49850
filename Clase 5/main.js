@@ -193,6 +193,10 @@ class Producto {
   vender() {
     this.cantidad -= 1; //this.cantidad = this.cantidad - 1
   }
+
+  agregar(cantidadIncremento){
+    this.cantidad += cantidadIncremento; 
+  }
 }
 
 const producto1 = new Producto("monitor", 1000, 5);
