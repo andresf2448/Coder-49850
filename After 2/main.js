@@ -62,3 +62,43 @@ no coloque la palabra salir
 /* 
 opcion para ver todos los productos
 */
+
+
+
+/* 
+1 tomar el arreglo de productos (la libreta)
+2 con mis ojos voy a mirar el primer elemento y verifico su nombre si coincide lo anoto en una hojita y se lo muestro al usuario, de lo contrario con los ojos sigo revisando el segundo producto
+
+llega Romina y me dice que quiere una camisa
+let nombre = prompt("Bienvenida dime el nombre producto"); //libro1
+
+tomo mi libretica con los productos
+
+mis ojos relalizan el proceso de ir producto por producto revisando que el nombre coincida con el que quiere romina
+for(const libro of produtos){
+  if(libro.nombre === nombre){
+
+  }
+}
+
+Una vez encuentro el producto lo anoto en una hojita aparte
+let libroEncontrado;
+
+for(const libro of produtos){
+  if(libro.nombre === nombre){
+    libroEncontrado = libro;
+  }
+}
+
+
+Luego le muestro el producto a romina
+
+if(libroEncontrado){
+  alert(``
+    Nombre: ${productoEncontrado.nombre}
+    Precio:  ${productoEncontrado.precio}
+  `)
+}else{
+  alert("producto no encontrado")
+}
+*/
