@@ -88,7 +88,63 @@ const generarAleatorio = (amplitud, desplazamiento) => {
 // console.log(generarAleatorio(3, 27));
 // console.log(generarAleatorio(3, 27));
 
-//crear una algoritmo que diga de manear aleatoria que premio y persona gana el concurso
+//crear una algoritmo que diga de manera aleatoria que premio y persona gana el concurso
 //arreglo personas
 //arreglo de premios
 // pepito -> computador
+
+// const premios = ["computador", "5000", "celular", "camara", "monitor"];
+// const personas = ["carlitos", "pepito", "juanita", "pedrito"];
+
+// const obtenerPremio = () => {
+//   let index = Math.floor(Math.random() * premios.length);
+//   return premios[index];
+// };
+
+// const obtenerGanador = () => {
+//   let index = Math.floor(Math.random() * personas.length);
+//   return personas[index]
+// };
+
+// console.log(`El ganador del premio ${obtenerPremio()} es ${obtenerGanador()}`);
+
+// const productos = ["canela", "mate", "cafe", "leche"];
+// const carrito = [];
+
+// productos.forEach((item) => {
+//   console.log(`veo el producto ${item} lo busco `);
+//   carrito.push(item)
+// });
+
+// console.log(carrito);
+
+//Date
+// console.log(Date());
+// console.log(new Date(2024, 0, 17));
+// const navidad = new Date("December 24, 2024 23:59:59");
+// console.log(navidad);
+// console.log(navidad.toDateString());
+// console.log(navidad.toLocaleString());
+// console.log(navidad.toLocaleDateString());
+// console.log(navidad.toTimeString());
+// console.log(navidad.getFullYear());
+// console.log(navidad.getMonth());
+// console.log(navidad.getDay());
+
+// const navidad = new Date("December 24, 2024");
+// const hoy = new Date("January 17, 2024");
+
+// console.log(navidad - hoy);
+
+// const milisegundosDia = 86400000;
+
+// console.log((navidad - hoy) / milisegundosDia);
+
+const fecha = new Date("February 20, 2024");
+const hoy = new Date("January 17, 2024");
+
+console.log(fecha - hoy);
+
+const milisegundosDia = 86400000;
+
+console.log((fecha - hoy) / milisegundosDia);
