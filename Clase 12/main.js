@@ -215,3 +215,13 @@ const usuario = {
     },
   },
 };
+
+const {
+  nombre,
+  telefonos: {
+    casa: { numero1: numeroCasa },
+    trabajo: { numero1: numeroTrabajo },
+  },
+} = usuario;
+
+console.log(nombre, numeroCasa, numeroTrabajo);
