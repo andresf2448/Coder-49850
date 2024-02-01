@@ -12,20 +12,22 @@
 
 // localStorage.setItem("carrito", JSON.stringify(carrito));
 
-const mofidicarPorNombre = (nombre, precio) => {
-  //traer la info del storage
-  let productosJson = localStorage.getItem("carrito");
-  let data = JSON.parse(productosJson);
+// const mofidicarPorNombre = (nombre, precio) => {
+//   //traer la info del storage
+//   let productosJson = localStorage.getItem("carrito");
+//   let data = JSON.parse(productosJson);
 
-  //modificaciones necesarias
-  const producto = data.find((item) => item.nombre === nombre);
-  producto.precio = precio;
+//   //modificaciones necesarias
+//   const producto = data.find((item) => item.nombre === nombre);
+//   producto.precio = precio;
 
-  //guardamos el arreglo en el storage
-  localStorage.setItem("carrito", JSON.stringify(data));
-};
+//   //guardamos el arreglo en el storage
+//   localStorage.setItem("carrito", JSON.stringify(data));
+// };
 
-let nombre = prompt("Ingrese el nombre del producto");
-let precio = Number(prompt("Ingrese el nuevo precio del producto"));
+// let nombre = prompt("Ingrese el nombre del producto");
+// let precio = Number(prompt("Ingrese el nuevo precio del producto"));
 
-mofidicarPorNombre(nombre, precio)
+// mofidicarPorNombre(nombre, precio);
+
+//crear una función que agregue un nuevo producto al storage
