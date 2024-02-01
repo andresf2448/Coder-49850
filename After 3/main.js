@@ -31,3 +31,27 @@
 // mofidicarPorNombre(nombre, precio);
 
 //crear una función que agregue un nuevo producto al storage
+// const agregarProducto = (nombre, precio) => {
+//   let productoStorage = localStorage.getItem("carrito");
+//   let data = JSON.parse(productoStorage);
+
+//   let producto = {
+//     id: data.length + 1,
+//     nombre,
+//     precio,
+//   };
+
+//   data.push(producto);
+
+//   localStorage.setItem("carrito");
+// };
+
+// let nombre = prompt("Ingrese el nombre del producto");
+// let precio = prompt("Ingrese el precio del producto");
+
+// agregarProducto(nombre, precio);
+
+// crear una funcion que elimine un elemento del carrito (filter)
+const eliminarProducto = (nombre) => {
+  
+}
