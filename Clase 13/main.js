@@ -120,29 +120,65 @@ find, filter, forEach, map
 */
 
 ///////////////////////////////////////////////////////////////////////////////
-const productos = [
-  { id: 1, nombre: "camisa", precio: 1000 },
-  { id: 2, nombre: "media", precio: 1000 },
-  { id: 3, nombre: "zapato", precio: 1000 },
-  { id: 4, nombre: "gorra", precio: 1000 },
-];
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "media", precio: 1000 },
+//   { id: 3, nombre: "zapato", precio: 1000 },
+//   { id: 4, nombre: "gorra", precio: 1000 },
+// ];
+
+// const carrito = [];
+
+// const agregar = (id) => {
+//   let producto = productos.find((item) => item.id === id);
+//   carrito.push(producto);
+//   console.log(carrito);
+// };
+
+// productos.forEach((item) => {
+//   let div = document.createElement("div");
+//   div.innerHTML = `
+//     <h2>Id: ${item.id}</h2>
+//     <p>Nombre: ${item.nombre}</p>
+//     <b>$${item.precio}</b>
+//     <button id="boton${item.id}">Agregar</button>
+//   `;
+
+//   document.body.append(div);
+//   let boton = document.getElementById(`boton${item.id}`);
+//   boton.addEventListener("click", () => agregar(item.id));
+// });
+
 ///////////////////////////////////////////////////////////////////////////////
-const carrito = [];
 
-const agregar = (id) => {
-  alert(`El producto seleccionado es el de id ${id}`)
-}
+const productos = [];//arreglo para guardar los productos creados
+let contenedor = document.getElementById("contenedor");//contenedor donde se muestran los productos
+let formulario = document.getElementById("formulario");
 
-productos.forEach((item) => {
-  let div = document.createElement("div");
-  div.innerHTML = `
-    <h2>Id: ${item.id}</h2>
-    <p>Nombre: ${item.nombre}</p>
-    <b>$${item.precio}</b>
-    <button id="boton${item.id}">Agregar</button>
-  `;
+//funcion para mostrar los productos
+const renderizar = (productos) => {
+  contenedor.innerHTML = ""; //eliminamos el contendio del contenedor para luego mostrar los productos
 
-  document.body.append(div);
-  let boton = document.getElementById(`boton${item.id}`);
-  boton.addEventListener("click", () => agregar(item.id))
+  productos.forEach((item) => {
+    let div = document.createElement("div");
+    div.innerHTML = `
+      <h2>ID: ${item.id}</h2>
+      <p>Nombre: ${item.nombre}</p>
+      <b>$${item.precio}</b>
+    `;
+
+    contenedor.append(div);
+  });
+};
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault(); //evitamos la recarga del formulario
+
+  let inputs = e.target.children; //inputs del formulario
+  let nombre = inputs[0].value;
+  let precio = inputs[1].value;
+
+  //Math.max(...productos.map(item => item.id)) + 1
+  productos.push({ id: productos.length + 1, nombre, precio });//agregamos el nuevo producto
+  renderizar(productos);
 });
