@@ -2,7 +2,7 @@
 //fetch(url, config);
 
 // fetch("https://jsonplaceholder.typicode.com/posts")
-//   .then((facundo) => facundo.json())
+//   .then((response) => response.json())
 //   .then((data) => {
 //     console.log(data[0].title);
 //     console.log(data[0].body);
@@ -76,3 +76,6 @@ const traerDatos = async () => {
 };
 
 traerDatos();
+
+const usuario = null;
+console.log(usuario?.nombre);
